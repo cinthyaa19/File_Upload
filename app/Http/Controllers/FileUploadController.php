@@ -12,7 +12,7 @@ class FileUploadController extends Controller
     }
 
     public function prosesFileUpload(Request $request){
-        // dump($request->berkas);
+        dump($request->berkas);
         // return "Pemrosesan file upload di sini";
 
         if ($request->hasFile('berkas')) {
