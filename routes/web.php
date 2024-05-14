@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileUploadController;
+use App\Http\Controllers\FileUploadRenameController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,6 @@ Route::get('/', function () {
 
 Route::get('/file-upload', [FileUploadController::class, 'fileUpload']);
 Route::post('/file-upload', [FileUploadController::class, 'prosesFileUpload']);
+
+Route::get('/image-upload', [FileUploadRenameController::class, 'imageUpload']);
+Route::post('/image-upload', [FileUploadRenameController::class, 'prosesImageUpload']);
